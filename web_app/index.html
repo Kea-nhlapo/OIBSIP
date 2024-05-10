@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button onclick="addTask()" class="right-button">Add Task</button>
+
+        <div class="tasks">
+            <h2>Pending Tasks</h2>
+            <ul id="pendingTasks">
+                <!-- New pending tasks will follow this structure -->
+                <!-- Example: -->
+                <!-- <li>
+                    <label for="newTask1">
+                        <input type="checkbox" id="newTask1">
+                        New task description
+                        <span class="task-date">(Added on Sep 19, 2023)</span>
+                        <button onclick="editTask(this)">Edit</button>
+                        <button onclick="deleteTask(this)">Delete</button>
+                    </label>
+                </li> -->
+            </ul>
+        </div>
+
+        <div class="tasks">
+            <h2>Completed Tasks</h2>
+            <ul id="completedTasks">
+                <!-- New completed tasks will follow this structure -->
+                <!-- Example: -->
+                <!-- <li>
+                    Task completed
+                    <span class="completion-date">(Completed on Sep 20, 2023)</span>
+                    <button onclick="deleteTask(this)">Delete</button>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <footer>
+    	<p align="center">&copy;Made by Kea</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    background-image: url('tumblr_5654291e8475a50fe1480214ca54cced_4a07955e_1280.jpg');
+}
+
+.container {
+    max-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 10px solid brown;
+    border-style: dashed;
+}
+img{
+    opacity: 0.5;
+}
+h1 {
+    text-align: center;
+    color: black;
+    font-family: "cursive";
+    font-size: 2rem;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+    border-radius: 25px;
+    border: 2px solid brown;
+}
+
+button {
+    background-color: brown;
+    color: white;
+    border: 2px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: "cursive";
+}
+
+.tasks {
+    margin-top: 20px;
+    font-family: "cursive";
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.tasks ul {
+    padding-left: 20px;
+}
+
+.tasks li {
+    position: relative;
+}
+
+.tasks input[type="checkbox"] {
+    margin-right: 20px;
+}
+
+.completion-date {
+    float: right;
+    color: gray;
+    font-size: 12px;
+    font-style: italics;
+}
+
+/* styles.css */
+
+/* ... (previous styles) */
+.task-item {
+    margin-bottom: 10px; /* Maintain consistent spacing between task items */
+}
+
+.edit-button,
+.delete-button {
+    float: right;
+    margin-right: 5px;
+    width: 60px; /* Set a fixed width for consistent spacing */
+    height: 30px; /* Set a fixed height for consistent spacing */
+    border: none;
+    cursor: pointer;
+    padding:0;
+    line-height: 0;
+    display: grid;
+    place-items: center;
+    font-family: "cursive";
+}
+
+.edit-button::before {
+    content: "Edit"; /* No content for the edit button */
+    padding: auto;
+    /* Add an icon or label for the edit button if desired */
+}
+
+.delete-button::before {
+    content: "Dlt"; /* No content for the delete button */
+    padding: auto;
+    /* Add an icon or label for the delete button if desired */
+}
+
+
